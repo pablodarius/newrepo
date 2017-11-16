@@ -11,4 +11,9 @@ node {
         sFichero1 = readFile 'code.src'
         echo sFichero1
    }
+   post {
+        always {
+            archive 'Test.txt'
+         }
+   }
 }
