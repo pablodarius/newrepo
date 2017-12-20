@@ -66,8 +66,10 @@ User´s name: {{user?.name}}
 
 <h1>A New checklist Ejercicio 3</h1>
 
-<app-item *ngFor="let item of items" [item]="item" (remove)="removeItem(item)"></app-item>
-
-<hr>
 <input #desc type='text'>
 <button (click)="addItem(desc.value); desc.value=''">Add</button>
+
+<hr>
+<app-item *ngFor="let item of items" [item]="item" (remove)="removeItem(item)"></app-item>
+
+
