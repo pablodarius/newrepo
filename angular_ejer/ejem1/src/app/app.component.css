@@ -1,0 +1,11 @@
+p {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+.tachado {
+  text-decoration: line-through;
+};
