@@ -1,1 +1,10 @@
 <h1>My First Angular App</h1>
+
+<br>
+<input #user type="text">
+<br><br>
+<input #password type="password">
+<br><br>
+<button (click)="login(user.value,password.value);user.value = '';password.value = ''">Entrar</button>
+<br><br>
+<h1>{{logging}}</h1>
